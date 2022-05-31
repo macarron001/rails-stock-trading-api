@@ -44,7 +44,7 @@ RSpec.describe User, type: :model do
     it 'upon creation balance must be 100' do 
       user = User.create!(email: "new@user.com", password: "password")
 
-      expect(user.balance).to eq(10000)
+      expect(user.balance).to eq(1000)
     end
 
   context 'Admin Capabilities' do 
