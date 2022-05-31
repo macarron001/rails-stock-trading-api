@@ -19,7 +19,8 @@ class StocksController < ApplicationController
   end
 
   def get_quote
-    @client.quote(params[:symbol])
+    quote = @client.quote(params[:symbol])
+    render json: quote
   end
 
   private
