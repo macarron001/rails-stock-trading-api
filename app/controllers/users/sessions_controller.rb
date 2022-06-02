@@ -14,5 +14,6 @@ class Users::SessionsController < Devise::SessionsController
       status: 200,
       message: "logged out successfully"
     }, status: :ok
+    # redirect_to "/login"
   end
 end
